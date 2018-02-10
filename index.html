@@ -1,41 +1,74 @@
 <!Doctype html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
-    <img src="images/logo.svg" alt="">
-    <title>Hoja de Vida</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Comenzando con la fotografía</title>
   </head>
-  <body>
-    <header>
-    	<h1>
-    		 Hoja de Vida
-    	</h1>
-      <h2>Mario Moises Velasco Chavez</h2>
-      <h3>12 de Noviembre de 1992, San Salvador, El Salvador</h3>
-    </header>
-    <navbar>
-      <ul>
-      <li> <a href="index.html">Inicio</a> </li>
-      <li> <a href="educacion.html">Educacion</a> </li>
-      <li> <a href="experiencia.html">Experiencia</a> </li>
-      </ul>
-    </navbar>
-    <h2>Informacion Personal</h2>
-    <img src="images/curriculum.jpg" width="350"height="200" alt="">
-    <h3><strong>Perfil:</strong></h3><p>Enfocado a Metas, buena administracion de tiempo y mente positiva</p>
-    <h3><strong>Idiomas:</strong></h3>
-    <ul>
-    <li> Espanol </li>
-    <li> Ingles </li>
-    </ul>
+
+  <body class="index">
+<div class="contenido">
+      <header class="Cabecera">
+    	   <h1 class="TituloCabecera">
+    		 Comenzando con la fotografía
+    	   </h1>
+        <nav class="Menu">
+          <a href="index.html" class="index">Inicio</a>
+          <a href="paisajes.html" class="paisajes">Paisajes</a>
+          <a href="retratos.html" class="retratos">Retratos</a>
+        </nav>
+      </header>
+<section class="ImagenCentral">
+      <img src="images/ImagenCentral.jpeg" class="adaptativa-porcentaje">
+</section>
+<div class="ImagenSecundaria" role="main">
+  <div class="contenedorPaisajes">
+      <img id="Paisajes" src="images/Paisajes.jpeg" class="adaptativa-porcentaje">
+      <h1 class="TituloCabecera" style="text-align:center;">Paisajes</h1>
+  </div>
+  <div class="contenedorRetratos">
+      <img id="Retratos" src="images/Retratos.jpeg" class="adaptativa-porcentaje">
+      <h1 class="TituloCabecera" style="text-align:center;">Retratos</h1>
+  </div>
+</div>
+
+
 <footer>
-	Derechos Reservados
-  <ul>
-  <li> <strong> Email: </strong><a href="mailto:mmvelasco92@gmail.com"> mmvelasco92@gmail.com </a></li>
-  <li> <strong> Telefono: </strong> (503) 7886-8037 </li>
-  <li> <strong> Direccion: </strong> San Salvador, El Salvador </li>
-  </ul>
+  <div class="PiePagina">
+  <div class="PieContacto">
+<h1 class="TituloCabecera" style="text-align:center;">Contacto</h1>
+    <ul>
+    <li> <strong> Email: </strong><a href="mailto:mmvelasco92@gmail.com"> mmvelasco92@gmail.com </a></li>
+    <li> <strong> Direccion: </strong> San Salvador, El Salvador </li>
+    <li> <strong> Telefono: </strong> (503) 7886-8037 </li>
+    </ul>
+  </div>
+  <div class="PieTermino">
+    <h1 class="TituloCabecera" style="text-align:center;">Terminos</h1>
+      <p>Parrafo referente a los terminos que se establecen en la empresa</p>
+  </div>
+  <div class="PieRedesSociales">
+      <h1 class="TituloCabecera" style="text-align:center;">Redes Sociales</h1>
+      <ul>
+      <li> <strong> Facebook </strong></li>
+      <li> <strong> Instagram </strong></li>
+      <li> <strong> Twitter </strong></li>
+      </ul>
+  </div>
+  <div class="PieDerechos">
+      <h1 class="TituloCabecera" style="text-align:center;">Derechos</h1>
+      <ul>
+        <li> <strong> Mario </strong></li>
+        <li> <strong> Velasco </strong></li>
+        <li> <strong> Copyright (c)  </strong></li>
+        <li> <strong> 2018  </strong></li>
+      </ul>
+  </div>
+</div>
 </footer>
-  </body>
+</div>
+</body>
 </html>

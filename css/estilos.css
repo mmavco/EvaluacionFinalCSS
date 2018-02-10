@@ -1,0 +1,200 @@
+
+body{
+	background-color: #02010a;
+	font-family: "Dancing Script";
+  color: white;
+}
+
+.TituloCabecera{
+  text-align: left;
+  text-shadow:  2px 2px 2px #02010a;
+  color: white;
+}
+.Cabecera{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	animation-name: hearder-animacion;
+	animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+nav.Menu{
+  text-align: right;
+}
+
+@media all and (max-width: 900px){
+	nav.Menu{
+	  text-align: center;
+	}
+	.contenido{
+		width: 100%;
+	}
+	.contenedorPaisajes {
+		width: 100%;
+		order: 1;
+		text-align: center;
+	}
+
+	.contenedorRetratos {
+		width: 100%;
+		order: 2;
+		text-align: center;
+	}
+
+	.TituloCabecera{
+		text-align: center;
+	}
+	.PieContacto {
+		width: 100%;
+		order:1;
+	}
+	.PieTermino {
+		width: 100%;
+		order:2;
+	}
+	.PieRedesSociales{
+		width: 100%;
+		order:3;
+	}
+	.PieDerechos{
+		width: 100%;
+		order:4;
+	}
+	.contenedor12{
+		width: 100%;
+	order:1
+	}
+	.contenedor34{
+		width: 100%;
+		order:2
+	}
+	.contenedor56{
+		width: 100%;
+		order: 3;
+	}
+
+}
+@media all and (min-width:900px){
+	.contenido{
+		width:900px;
+		text-align: center;
+		margin:auto;
+		padding-top: 0px;
+	}
+	.contenedorPaisajes, .contenedorRetratos {
+  	width: 50%;
+ 	text-align: center;
+  }
+
+	.PieContacto, .PieTermino, .PieRedesSociales, .PieDerechos {
+		width: 25%;
+	}
+
+	.contenedorP1, .contenedorP3,.contenedorP5 {
+width: 100;
+		order: 1
+	}
+	.contenedorP2, .contenedorP4, .contenedorP6{
+width: 100;
+		order: 2
+	}
+
+	.contenedor12, .contenedor34, .contenedor56{
+		width: 33.33%;
+	}
+}
+
+
+@keyframes hearder-animacion {
+	0% {
+		position: relative;
+		margin-top: 150%;
+	}
+	60% {
+		position: relative;
+		margin-top: -5%;
+	}
+	100% {
+		position: relative;
+		margin-top: 0%;
+	}
+}
+
+ body.index a.index, body.paisajes a.paisajes, body.retratos a.retratos {
+	 text-decoration: inherit;
+ }
+section.ImagenCentral{
+background-color:#82c3a6;
+margin: 0%;
+text-align: center;
+padding: 10px;
+}
+img{
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+  filter: drop-shadow(2px 2px 2px #02010a);
+}
+ .adaptativa-porcentaje{
+ 	width:90%;
+ }
+
+ .ImagenSecundaria {
+	margin: 0;
+	width: 100%;
+	padding-top: 10px;
+ 	display: flex;
+	flex-flow: row wrap;
+	background-color: #d5c75f;
+	border: 1px;
+ }
+
+#Paisajes:hover{
+	transform: rotateZ(10deg);
+	-webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	border: 2px;
+	}
+
+	#Retratos:hover{
+		transform: translate(20px, -5px);
+		-webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+		filter: drop-shadow(2px 2px 2px #82c3a6);
+		border: 2px;
+	}
+
+	.PiePagina {
+	 text-align: center;
+	 margin: 0;
+	 width: 100%;
+	 padding-top: 10px;
+	 display: flex;
+	 flex-flow: row wrap;
+	 background-color: #C6d5c5;
+	 border-radius: 0px 0px 10px 10px;
+	 color: black;
+	}
+	.galerias{
+	text-align: center;
+	 margin: 0;
+	 width: 100%;
+	 padding-top: 10px;
+	 display: flex;
+	 flex-flow: row wrap;
+	 background-color: #d5c75f;
+	 border: 1px;
+	}
+
+	#P1{
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+	}
+	#P2, #P4, #P6{
+		-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	}
+	#P3{
+		-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+	}
